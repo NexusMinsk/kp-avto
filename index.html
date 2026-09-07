@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Коммерческое предложение · АвтоХаус × Nexus</title>
+  <meta name="description" content="Коммерческое предложение nexus.by: сайт ООО «АвтоХаус Шелковый Путь». Макет предложенного варианта — на этой странице.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Onest:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/kp.css">
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div class="gate" id="gate">
+    <div class="lang lang--gate" role="group" data-i18n-aria="lang">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+    </div>
+    <p class="gate__pair">NEXUS × SILK ROAD</p>
+    <h1 data-i18n="gate.title">Откройте предложение с компьютера</h1>
+    <p data-i18n="gate.text">Эта страница рассчитана на экран ПК или ноутбука: так виден макет и полный объём коммерческого предложения. С телефона его не раскрыть.</p>
+  </div>
+
+  <canvas id="hero3d" class="scene-3d" aria-hidden="true"></canvas>
+
+  <div class="page">
+    <header class="top">
+      <div class="top__left">
+        <a class="top__brand" href="https://nexus.by/" target="_blank" rel="noopener">NEXUS</a>
+        <div class="lang" role="group" data-i18n-aria="lang">
+          <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
+      <span class="top__mark" id="trackLabel" data-i18n="top.mark">Коммерческое предложение</span>
+      <a class="top__client" href="#preview">SILK ROAD</a>
+    </header>
+
+    <nav class="track" id="track" data-i18n-aria="track.aria">
+      <a href="#intro" data-track="intro" data-i18n="track.intro">Начало</a>
+      <a href="#brief" data-track="brief" data-i18n="track.brief">Суть</a>
+      <a href="#preview" data-track="preview" data-i18n="track.preview">Макет</a>
+      <a href="#scope" data-track="scope" data-i18n="track.scope">Состав</a>
+      <a href="#offer" data-track="offer" data-i18n="track.offer">Срок</a>
+      <a href="#price" data-track="price" data-i18n="track.price">Стоимость</a>
+      <a href="#contact" data-track="contact" data-i18n="track.contact">Отклик</a>
+    </nav>
+
+    <section class="hero" id="intro">
+      <div class="hero__shade"></div>
+      <div class="hero__copy">
+        <p class="eyebrow reveal" data-i18n="hero.eyebrow">NEXUS × ООО «АвтоХаус Шелковый Путь»</p>
+        <h1 class="hero__title reveal" data-i18n="hero.title">Новый сайт салона</h1>
+        <p class="hero__lead reveal" data-i18n-html="hero.lead">
+          Коммерческое предложение на сайт АвтоХаус Шелковый путь <br> Макет уже сделан, чтобы вы видели направление до договора.
+        </p>
+        
+      </div>
+    </section>
+
+    <section class="brief" id="brief">
+      <div class="brief__shade"></div>
+      <div class="brief__fade"></div>
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="brief.eyebrow">Суть предложения</p>
+        <h2 data-i18n="brief.title">Зачем обновлять сайт</h2>
+      </div>
+      <div class="prose reveal">
+        <p data-i18n="brief.p1">ООО «АвтоХаус Шелковый Путь» везёт электрокары из Китая в Минск: салон на Тимирязева, договор и таможня под ключ. Текущая подача этому уровню не соответствует: конструктор, тяжёлая структура, сайт не выглядит так, как салон ведёт сделки. Мы предлагаем собрать новый сайт на чистом коде без конструкторов.</p>
+        <p data-i18n="brief.p2">Макет на этой странице ниже мы подготовили заранее. Это рабочий кликабельный прототип: можно пройтись по разделам, открыть каталог, карточку машины, доставку. Задача макета — согласовать направление до договора, а не выдать готовый продукт «под ключ» без обсуждения.</p>
+        <p data-i18n="brief.p3">Страницы, которые вы видите, — только то, что мы пока решили взять как старт. Это стартовый набор, а не финальный список. Дальше создаем те страницы, которые вы решите добавить: сравнение моделей, лизинг, личный кабинет, админка наличия, интеграции — всё, что нужно салону. Объём доп. страниц считаем отдельно, перед договором.</p>
+        <p data-i18n="brief.p4">После согласования макета фиксируем состав работ, стоимость и сроки, оформляем договор и собираем боевой сайт. Скорость в смету не закладываем как наценку: быстрая реализация — наша приятная особенность.</p>
+      </div>
+    </section>
+
+    <section class="preview" id="preview">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="preview.eyebrow">Макет</p>
+        <h2 data-i18n="preview.title">Предложенный вариант сайта</h2>
+        <p data-i18n="preview.lead">Ниже — живой макет. Переключайте вкладки: главная, каталог, автомобиль, о нас, доставка, контакты. Это не картинки, а страницы, по которым можно кликать.</p>
+      </div>
+      <div class="prose reveal">
+        <p data-i18n="preview.note">В каталоге уже стоят фильтры (в наличии, под заказ, тип кузова) и карточки машин. В карточке — фото, характеристики и заявка на расчёт. Это демонстрационная база, не ваша рабочая выгрузка: после договора подключаем реальное наличие и тот контент, который вы дадите.</p>
+       
+      </div>
+
+      <div class="theater reveal" id="theater">
+        <div class="theater__bar">
+          <div class="tabs" id="pageTabs" role="tablist" data-i18n-aria="preview.tabsAria"></div>
+        </div>
+
+        <div class="browser" id="browser">
+          <div class="browser__chrome">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <div class="url" id="urlBar">silkroad.by</div>
+          </div>
+          <div class="browser__stage" id="stage">
+            <iframe id="mockFrame" data-i18n-title="preview.frameTitle" title="Макет сайта АвтоХаус Шелковый путь" allow="autoplay; fullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scope" id="scope">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="scope.eyebrow">Состав</p>
+        <h2 data-i18n="scope.title">Что уже есть в макете</h2>
+        <p data-i18n="scope.lead">Шесть блоков ниже — то, что собрано сейчас. Кликом по карточке открывается соответствующий экран в макете. Это старт. Потолок — то, что утвердим вместе.</p>
+      </div>
+      <div class="scope-grid">
+        <article class="card reveal" data-page="index.html">
+          <span>01</span>
+          <h3 data-i18n="scope.c1t">Главная</h3>
+          <p data-i18n="scope.c1p">Первый экран салона, машины в наличии и заявка на расчёт. Сразу понятно, чем занимается компания и куда звонить.</p>
+        </article>
+        <article class="card reveal" data-page="catalog.html">
+          <span>02</span>
+          <h3 data-i18n="scope.c2t">Каталог</h3>
+          <p data-i18n="scope.c2p">Наличие и под заказ. Фильтры по типу кузова, карточки машин без мёртвых цен на витрине — расчёт в разговоре.</p>
+        </article>
+        <article class="card reveal" data-page="car.html?id=eqe-suv">
+          <span>03</span>
+          <h3 data-i18n="scope.c3t">Карточка автомобиля</h3>
+          <p data-i18n="scope.c3p">Фото, запас хода, привод, салон, цвет и заявка на точный расчёт. Клиент смотрит машину, а не таблицу объявлений.</p>
+        </article>
+        <article class="card reveal" data-page="delivery.html">
+          <span>04</span>
+          <h3 data-i18n="scope.c4t">Доставка из Китая</h3>
+          <p data-i18n="scope.c4p">Маршрут Китай → Минск: договор, логистика, таможня, ключи. Можно развить в полноценный контентный раздел.</p>
+        </article>
+        <article class="card reveal" data-page="about.html">
+          <span>05</span>
+          <h3 data-i18n="scope.c5t">О компании</h3>
+          <p data-i18n="scope.c5p">История салона: партнёры в Азии, точка на Тимирязева, почему это не витрина «перекупов».</p>
+        </article>
+        <article class="card reveal" data-page="contacts.html">
+          <span>06</span>
+          <h3 data-i18n="scope.c6t">Контакты и салон</h3>
+          <p data-i18n="scope.c6p">Адрес в ЖК Олимпик Парк, телефоны, карта и форма заявки на расчёт.</p>
+        </article>
+      </div>
+      <div class="prose reveal" style="margin-top:40px">
+        <p data-i18n="scope.extra">Что можно добавить дальше — по согласованию: сравнение моделей, лизинг и кредит, новости и акции, вакансии, личный кабинет, админка наличия для менеджеров, выгрузка на площадки, мультиязычность. Каждая такая история влияет на срок и сумму, поэтому не включаем её «по умолчанию», а считаем отдельно.</p>
+      </div>
+    </section>
+
+    <section class="offer" id="offer">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="offer.eyebrow">Срок</p>
+        <h2 data-i18n="offer.title">10 дней вместо полутора–двух месяцев</h2>
+        <p data-i18n="offer.lead">На сайты такого класса — каталог, карточки машин, доставка, разделы салона — студии обычно закладывают от 1,5–2 месяцев, часто ближе к двум–трём. Наш ориентир — десять дней: примерно в четыре–пять раз быстрее нижней планки рынка. Не потому что режем качество, а потому что макет уже готов.</p>
+      </div>
+
+      <div class="offer-pace">
+        <article class="offer-pace__side reveal">
+          <b class="offer-pace__range" data-i18n="offer.marketRange">1,5–2</b>
+          <i data-i18n="offer.marketUnit">мес</i>
+          <div>
+            <h3 data-i18n="offer.marketTitle">Как на рынке</h3>
+            <p data-i18n="offer.marketText">Типичный срок на кастомный сайт автосалона. «Пара недель» там не фигурирует: в срок входит аналитика, прототип и дизайн с чистого листа.</p>
+          </div>
+        </article>
+        <article class="offer-pace__main reveal">
+          <b>10</b>
+          <i data-i18n="offer.oursUnit">дней</i>
+          <div>
+            <h3 data-i18n="offer.oursTitle">Наш ориентир</h3>
+            <p data-i18n="offer.oursText">Сборка согласованного варианта. Направление уже нарисовано — месяц на «придумать внешний вид» не нужен. Поэтому 10 дней, а не квартал.</p>
+          </div>
+        </article>
+        <article class="offer-pace__side reveal">
+          <b>7</b>
+          <i data-i18n="offer.fastUnit">дней</i>
+          <div>
+            <h3 data-i18n="offer.fastTitle">Если отвечаете сразу</h3>
+            <p data-i18n="offer.fastText">Правки в тот же день или на следующий — цикл сжимается до семи дней. Если ответы идут дольше, срок растягивается.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="offer-kicker reveal" data-i18n="offer.kicker">Как идём</p>
+      <ol class="offer-line">
+        <li class="reveal">
+          <span>01</span>
+          <h3 data-i18n="offer.s1t">Оценка</h3>
+          <p data-i18n="offer.s1p">Смотрите макет: заходит ли направление, как выглядит, чего не хватает.</p>
+        </li>
+        <li class="reveal">
+          <span>02</span>
+          <h3 data-i18n="offer.s2t">Обсуждение</h3>
+          <p data-i18n="offer.s2p">После одобрения садимся уже к самому сайту: состав страниц, что добавляем, интеграции, админка. Считаем итог и запускаем работу.</p>
+        </li>
+        <li class="reveal">
+          <span>03</span>
+          <h3 data-i18n="offer.s3t">Реализация</h3>
+          <p data-i18n="offer.s3p">Дорабатываем макет, собираем боевой сайт, адаптируем под телефоны, подключаем заявки. Показываем не только финал.</p>
+        </li>
+        <li class="reveal">
+          <span>04</span>
+          <h3 data-i18n="offer.s4t">Передача</h3>
+          <p data-i18n="offer.s4p">Сдача после приёмки: доступы, домен, короткая инструкция. Сопровождение — отдельный разговор, не обязательная строка.</p>
+        </li>
+      </ol>
+
+      <p class="offer-need reveal" data-i18n="offer.need">На этом этапе от вас не нужны ни список правок, ни контент. Нужна оценка макета — как заходит направление. Если одобряете, переходим к обсуждению самого сайта.</p>
+    </section>
+
+    <section class="price" id="price">
+      <div class="price-hero reveal">
+        <p class="eyebrow" data-i18n="price.eyebrow">Стоимость</p>
+        <p class="price-hero__lead" data-i18n="price.lead">Мы готовы взять в работу</p>
+        <p class="price-hero__sum"><span class="price-hero__from" data-i18n="price.from">от</span><span class="price-hero__num">1 800</span><small>BYN</small></p>
+        <p data-i18n-html="price.note">Представленный вариант — то, что крутится в макете выше. Итог зависит от состава: правки, новые страницы, админка, интеграции. <br> За скорость доплаты нет.</p>
+      </div>
+
+      <div class="price-grid">
+        <article class="reveal">
+          <span>01</span>
+          <h3 data-i18n="price.p1t">Сумма ещё не конечная</h3>
+          <p data-i18n="price.p1p">1 800 BYN — ориентир по текущему варианту. Смотрим объём, считаем итог. Цифра может вырасти, если растёт состав. </p>
+        </article>
+        <article class="reveal">
+          <span>02</span>
+          <h3 data-i18n="price.p2t">За скорость доплаты нет</h3>
+          <p data-i18n="price.p2p">Это наша фишка, а не опция в смете. Платите за согласованный объём работ, а не за то, что команда не растягивает проект.</p>
+        </article>
+        <article class="reveal">
+          <span>03</span>
+          <h3 data-i18n="price.p3t">Оплату можно разделить</h3>
+          <p data-i18n="price.p3p">Можно разбить до трех месяцев на равные части. Без какой либо наценки за "рассрочку".</p>
+        </article>
+      </div>
+
+      <div class="price-scope">
+        <article class="reveal">
+          <h3 data-i18n="price.inTitle">Что входит</h3>
+          <p data-i18n="price.inText">Дизайн согласованного направления, вёрстка утверждённых страниц, адаптив, формы заявок, каталог машин, базовая SEO-разметка, публикация.</p>
+        </article>
+        <article class="reveal">
+          <h3 data-i18n="price.outTitle">Считаем отдельно</h3>
+          <p data-i18n="price.outText">Наполнение десятками моделей вручную, страницы, дополнительный функционал, сложные связки с 1С и CRM, реклама, постоянная поддержка. ИИ и другие фишки — если решите идти дальше.</p>
+        </article>
+      </div>
+
+      <div class="price-long reveal">
+        <p class="eyebrow" data-i18n="price.nextEyebrow">Дальше</p>
+        <h3 data-i18n="price.nextTitle">Рассчитываем на долгосрочное сотрудничество</h3>
+        <p data-i18n="price.nextText">Не на разовый сайт «сдали и забыли». Команда каждый день учится новому — после запуска можем сопровождать проект, обновлять сайт и насыщать его фишками, которые понадобятся салону. Отдельно занимаемся разработкой ИИ для бизнеса: умный подбор, разбор заявок, внутренние инструменты — если это станет следующим шагом, это тоже наша сторона.</p>
+      </div>
+    </section>
+
+    <footer class="foot" id="contact">
+      <div class="foot__copy reveal">
+        <p class="eyebrow">Nexus</p>
+        <h2 data-i18n="foot.title">Ждём отклик</h2>
+        <p data-i18n="foot.text"> Напишите в Telegram или позвоните, как удобнее. После одобрения обсудим сам сайт.</p>
+      </div>
+      <p class="foot__legal" data-i18n="foot.legal">NEXUS × SILK ROAD · коммерческое предложение · 2026</p>
+    </footer>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/kp.js"></script>
+  <script type="module" src="js/hero3d.js"></script>
+</body>
+</html>

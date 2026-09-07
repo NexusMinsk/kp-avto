@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <base href="/avto/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог | АвтоХаус Шелковый путь</title>
+  <meta name="description" content="Электромобили в наличии в Минске: Mercedes EQE, AUDI E5, BYD Han L, Qin Plus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <div class="cursor" id="cursor" hidden></div>
+  <div class="cursor-ring" id="cursor-ring" hidden></div>
+  <div class="top" id="site-top">
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><strong>АвтоХаус Шелковый Путь</strong><small>Автомобили в наличии и под заказ</small></a>
+        <nav class="nav" id="site-nav" aria-label="Основная навигация">
+          <a href="index.html">Главная</a>
+          <a href="catalog.html" aria-current="page">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="delivery.html">Доставка</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-contacts">
+          <a class="phone-ico" href="tel:+375292202020" aria-label="Позвонить +375 29 220 20 20"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Наличие</p>
+        <h1>Машины, которые уже в Минске</h1>
+        <p class="lead">Цены на сайте не публикуем специально: рынок Китая двигается каждый день. Откройте карточку — там состав и заявка на точный расчет.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:12px">
+      <div class="container">
+        <div class="filters" role="tablist" aria-label="Фильтры каталога">
+          <button class="chip is-on" type="button" data-filter="all">Все</button>
+          <button class="chip" type="button" data-filter="in">В наличии</button>
+          <button class="chip" type="button" data-filter="order">Под заказ</button>
+          <button class="chip" type="button" data-filter="suv">Кроссовер</button>
+          <button class="chip" type="button" data-filter="sedan">Седан</button>
+          <button class="chip" type="button" data-filter="liftback">Лифтбек</button>
+        </div>
+        <p class="note catalog-empty" hidden>Пока пусто — эти позиции появятся здесь. Сбросьте фильтр или напишите, какую модель ищем в Китае.</p>
+        <div class="catalog-grid">
+          <a class="car" href="car.html?id=eqe-suv" data-stock="in" data-type="suv">
+            <img src="https://static.tildacdn.biz/tild6436-3665-4463-b462-343865663635/_viber_2026-04-27_10.jpg" alt="Mercedes-Benz EQE SUV 2024">
+            <div class="car-body"><strong>Mercedes-Benz EQE SUV 2024</strong><small>Кроссовер · электро · в наличии</small></div>
+          </a>
+          <a class="car" href="car.html?id=audi-e5" data-stock="in" data-type="liftback">
+            <img src="https://static.tildacdn.biz/tild3230-3638-4036-b338-343839356439/_viber_2026-05-07_18.jpg" alt="AUDI E5">
+            <div class="car-body"><strong>AUDI E5</strong><small>Лифтбек · электро · в наличии</small></div>
+          </a>
+          <a class="car" href="car.html?id=han-l" data-stock="in" data-type="sedan">
+            <img src="https://static.tildacdn.biz/tild3066-6333-4730-b037-303338656563/_viber_2026-08-12_14.jpg" alt="BYD Han L 4WD">
+            <div class="car-body"><strong>BYD Han L 4WD</strong><small>Седан · полный привод · в наличии</small></div>
+          </a>
+          <a class="car" href="car.html?id=eqe" data-stock="in" data-type="sedan">
+            <img src="https://static.tildacdn.biz/tild6535-3164-4832-b335-396439656664/_viber_2026-04-22_14.jpg" alt="Mercedes-Benz EQE">
+            <div class="car-body"><strong>Mercedes-Benz EQE</strong><small>Седан · электро · в наличии</small></div>
+          </a>
+          <a class="car" href="car.html?id=qin-plus" data-stock="in" data-type="sedan">
+            <img src="https://static.tildacdn.biz/tild6435-3839-4261-b836-303535383862/__2026-08-13_092412.png" alt="BYD Qin Plus">
+            <div class="car-body"><strong>BYD Qin Plus</strong><small>Седан · электро · в наличии</small></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Нужной модели нет в зале?</h2>
+            <p>Привезем под заказ. Обычно до 60 дней, если авто есть у партнеров в Китае.</p>
+          </div>
+          <a class="btn" href="delivery.html">Как везём</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand"><strong>АвтоХаус Шелковый Путь</strong></div>
+        <p>ООО «АвтоХаус Шелковый Путь» · УНП 193758748</p>
+      </div>
+      <div>
+        <h3>Разделы</h3>
+        <p><a href="about.html">О нас</a></p>
+        <p><a href="contacts.html">Контакты</a></p>
+      </div>
+      <div>
+        <h3>Связь</h3>
+        <p><a href="tel:+375292202020">+375 29 220 20 20</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 АвтоХаус Шелковый Путь</div>
+  </footer>
+  <aside class="cookie" id="cookie"><p>Мы используем cookie для улучшения работы сайта</p><button class="btn" type="button">Я согласен</button></aside>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
